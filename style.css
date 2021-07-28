@@ -1,0 +1,45 @@
+/* Cascading Style Sheets
+   custom font? google fonts: copy <link> to top of html, change label to '__' */
+/* div { width: 10px; height: 10px; background-color: red; } */
+
+body {
+  margin: 0;
+}
+
+main {
+  align-items: center;
+  background-color: #6c8396;
+  display: flex;
+  justify-content: center;
+  height: 100vh;  /* vh means viewpoint height */
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin: 32px;
+  padding: 32px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 25px;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  border-radius: 9999px;
+}
+
+.links {
+  /* . means class */
+}
