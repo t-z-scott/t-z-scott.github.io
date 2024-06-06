@@ -5,6 +5,7 @@ I made a website! This will be a portfolio website - I'm working on it. For now,
 - [ ] ~~refactor with Django (? - might not be necessary)~~
 - [ ] update to reflect change in location
 - [ ] add [Kofi](https://ko-fi.com/tzscott) button
+- [ ] update [LinkedIn](https://www.linkedin.com/in/taylor-z-scott/) link
 - [ ] turn into a portfolio page
 - [ ] enable the user to run projects through the website
 - [ ] add projects done in and outside of school (high school and college)
