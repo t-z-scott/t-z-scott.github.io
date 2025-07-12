@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'jekyll', '~> 4.0'
+# gem 'jekyll-theme-hacker'
+gem 'jekyll-remote-theme'
+gem 'jekyll-seo-tag'
