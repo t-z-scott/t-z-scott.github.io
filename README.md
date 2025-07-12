@@ -13,9 +13,9 @@ Arturo Herrero - check out their [cool website](https://arturoherrero.com/) and 
 
 Johnathan McGlone for [this guide](https://jmcglone.com/guides/github-pages/), which I found very helpful.
 ## What's next?
-I'll start with this [list of future project ideas](https://cybercademy.org/project-ideas/).
+I'll finish the imcomplete projects I have. Then, I'll start with either this [list of future project ideas](https://cybercademy.org/project-ideas/) or [this one](https://www.codecademy.com/projects/subject/cybersecurity).
 ## This website may be joining the Indie Web!
-- [ ] make custom domain
+- [ ] make a [personal domain](https://indieweb.org/personal-domain)
 - [ ] [get started](https://indieweb.org/Getting_Started#IndieWeb_CMS_and_Hosting)
 - [ ] set up [web sign in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)
 - [ ] do [<=100 things](https://jamesg.blog/2024/02/19/personal-website-ideas) with the site
