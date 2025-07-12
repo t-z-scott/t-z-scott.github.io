@@ -1,0 +1,23 @@
+---
+layout: default
+title: Taylor Scott - whoami
+permalink: /about/
+---
+
+Hi again! I'm Taylor.
+
+I'm a security engineer based in the San Francisco Bay Area. I work at
+[LinkedIn](). During my career, I have had the opportunity to work with amazing people
+securing supply chains, automating processes, and leading technical teams.
+
+This is my digital garden—a space where I collect thoughts, projects, and my personal
+interests in the realm of cybersecurity. I publish [articles and notes](/blog/) documenting
+ideas and learnings along the way.
+
+I'm constantly working on [personal projects](/projects/). My journey includes writing documentation,
+creating requirements for my professional projects, and occasionally mentoring. See my
+[resume](/resume/) for more details.
+
+You can find me on LinkedIn (of course) as *[Taylor Scott](https://www.linkedin.com/in/taylor-z-scott/),*
+or email me at *<contact.taylorzs@gmail.com>*. I'm considering making a Mastodon account; if I do so,
+I'll update this page with the link.
