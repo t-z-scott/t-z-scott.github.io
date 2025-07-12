@@ -6,4 +6,15 @@ permalink: /
 
 # 👋 Hi y'all!
 I'm Taylor Scott, and this is my website. Take a look at the pages in the nav bar!
-Note: no links work yet, as the pages don't exist. I'm currently creating my custom 404 error page.
+
+Note: page is under construction. Some links may not work. I'm currently creating my custom 404 error page.
+## Special thanks to...
+- Arturo Herrero for the [cool webpage](https://arturoherrero.com/) and [code reference](https://github.com/arturoherrero/arturoherrero.com/blob/master/pages/index.md?plain=1)
+- Johnathan McGlone, for [this guide](https://jmcglone.com/guides/github-pages/), which I found very helpful but did not follow.
+## What's next?
+- I'll start with this [list of future project ideas](https://cybercademy.org/project-ideas/).
+## This website may be joining the Indie Web!
+- [ ] make custom domain
+- [ ] [get started](https://indieweb.org/Getting_Started#IndieWeb_CMS_and_Hosting)
+- [ ] set up [web sign in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)
+- [ ] do [<=100 things](https://jamesg.blog/2024/02/19/personal-website-ideas) with the site
