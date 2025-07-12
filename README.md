@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Taylor Scott`s Website
+title: Taylor Scott - Home
 permalink: /
 ---
 
