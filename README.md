@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Taylor Scott`s Website
-permalink: /
 ---
 
 # 👋 Hi y'all!
