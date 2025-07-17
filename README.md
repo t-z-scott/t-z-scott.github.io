@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Taylor Scott - Home
+title: 404 On the Floor - Home
 permalink: /
 ---
 
 # 👋 Hi y'all!
-I'm Taylor Scott, and this is my website. Take a look at the pages in the nav bar!
+I'm Purple Paradox, and this is my website. Take a look at the pages in the nav bar!
 
 Note: page is under construction. Some links may not work. I'm currently creating my custom 404 error page.
 ## Special thanks to...
@@ -15,7 +15,7 @@ Note: page is under construction. Some links may not work. I'm currently creatin
 
 **Michael Sass**, creator and owner of [Shellsharks](https://shellsharks.com/) and this [online resume](https://shellsharks.com/resume), for inspiring me to join the Indie Web. Speaking of...
 ## What's next?
-I'll finish the imcomplete projects I have. Then, I'll start with either this [list of future project ideas](https://cybercademy.org/project-ideas/) or [this one](https://www.codecademy.com/projects/subject/cybersecurity).
+I'll finish the incomplete projects I have. Then, I'll start with either this [list of future project ideas](https://cybercademy.org/project-ideas/) or [this one](https://www.codecademy.com/projects/subject/cybersecurity).
 ## This website may be joining the Indie Web!
 ### To-do
 - [ ] make a [personal domain](https://indieweb.org/personal-domain)
