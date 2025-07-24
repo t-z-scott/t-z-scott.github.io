@@ -1,0 +1,11 @@
+# www.robotstxt.org/
+# https://github.com/fail2ban/fail2ban/discussions/3772
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+Allow: /site
