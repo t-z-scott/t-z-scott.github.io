@@ -9,9 +9,8 @@ permalink: /blog/
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    <li>
-        <p>{{ post.excerpt }}</p>
+      <span> / </span>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
     </li>
     <p>---</p>
   {% endfor %}
