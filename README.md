@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 404 On the Floor - Home
+title: 404 On The Floor - Home
 permalink: /
 ---
 
