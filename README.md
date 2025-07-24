@@ -24,6 +24,7 @@ Currently I'm building several features for this site. Next:
 ### To-do
 - [x] make a [personal domain](https://indieweb.org/personal-domain)
 - [x] set up [web sign in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)
+- [ ] join [the community](https://indieweb.org/discuss#Join_via_Slack) 
 - [ ] do [<=100 things](https://jamesg.blog/2024/02/19/personal-website-ideas) with the site
 
 ### rel-me
