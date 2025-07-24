@@ -1,4 +1,4 @@
-title: 404 On the Floor
+title: 404 On The Floor
 description: My personal website showcasing my projects, resume, and blog posts.
 author:
   name: Purple Paradox
@@ -8,8 +8,19 @@ author:
 # plugins:
 #   - jekyll-theme-hacker
 # Uncomment the following lines to use a remote theme
-# theme: null
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+defaults: # front matter defaults
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
