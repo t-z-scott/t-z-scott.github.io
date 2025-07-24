@@ -1,5 +1,6 @@
 # www.robotstxt.org/
-# https://github.com/fail2ban/fail2ban/discussions/3772
+# resource: https://github.com/fail2ban/fail2ban/discussions/3772
+# robots.txt verification: https://technicalseo.com/tools/robots-txt/
 
 User-agent: *
 Disallow: /
