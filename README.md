@@ -5,7 +5,7 @@ permalink: /
 ---
 
 # 👋 Hi y'all!
-I'm Purple Paradox, and this is my website. Take a look at the pages in the nav bar!
+I'm Purple Paradox, and this is my website. Take a look at the pages in the nav bar above! Learn more about me [here](/about/).
 
 Note: page is under construction. Some links may not work. I have made a custom 404 error page. If you see the disco ball, there's a link to make your way back here.
 ## Special thanks to...
