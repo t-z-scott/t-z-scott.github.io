@@ -7,11 +7,10 @@ author:
 # theme: jekyll-theme-hacker
 # plugins:
 #   - jekyll-theme-hacker
-# Uncomment the following lines to use a remote theme
+# using hacker as a remote theme
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag
 defaults: # front matter defaults
   -
     scope:
@@ -24,3 +23,15 @@ defaults: # front matter defaults
       type: "posts"
     values:
       layout: "post"
+favicons:
+  - icon: "assets/images/favicon/favicon-96x96.png"
+    sizes: "96x96"
+  - icon: "assets/images/favicon/favicon.svg"
+    type: "image/svg+xml"
+  - icon: "assets/images/favicon/favicon.ico"
+    rel: "shortcut icon"
+  - icon: "assets/images/favicon/apple-touch-icon.png"
+    sizes: "180x180"
+    rel: "apple-touch-icon"
+  - icon: "assets/images/favicon/site.webmanifest"
+    rel: "manifest"
