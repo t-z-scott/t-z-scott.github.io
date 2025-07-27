@@ -35,3 +35,5 @@ favicons:
     rel: "apple-touch-icon"
   - icon: "assets/images/favicon/site.webmanifest"
     rel: "manifest"
+include:
+  - assets
