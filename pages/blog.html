@@ -12,6 +12,6 @@ permalink: /blog/
       <span> / </span>
       <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
     </li>
-    <p>---</p>
+    {% unless forloop.last %}<p>---</p>{% endunless %}
   {% endfor %}
 </ul>
