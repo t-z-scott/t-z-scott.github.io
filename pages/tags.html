@@ -18,11 +18,7 @@ permalink: /tags.html
      {% for post in site.tags[tag_name] %}
      <li>
        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-       <b>
-         <a href="{{ post.url | relative_url }}">
-           {{ post.title | escape }}
-         </a>
-       </b> - <i>{{ post.date | date: date_format }}</i>
+       <b><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></b> - <i>{{ post.date | date: date_format }}</i>
      </li>
      {% endfor %}
     </ul>
