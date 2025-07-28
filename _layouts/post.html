@@ -6,9 +6,9 @@ layout: default
 {{content}}
 
 <div>
-  <small>published: {{ page.date | date: "%-d %B %Y" }}</small><br>
+  <small>published: {{ page.date | date: "%b %-d, %Y" }}</small><br>
   {% if page.updated %}
-    <small>updated: {{ page.updated | date: "%-d %B %Y" }}</small>
+    <small>updated: {{ page.updated | date: "%b %-d, %Y" }}</small>
   {% endif %}
   <small>word count: {{ content | number_of_words }}</small><br>
   {% if page.tags %}

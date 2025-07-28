@@ -17,12 +17,6 @@ defaults: # front matter defaults
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
 favicons:
   - icon: "assets/images/favicon/favicon-96x96.png"
     sizes: "96x96"
@@ -37,3 +31,31 @@ favicons:
     rel: "manifest"
 include:
   - assets
+collections:
+  # blog:
+  #   output: true # create a "blog" page
+  #   permalink: /:collection/:title/ # path is /blog/:post-title/ for each post in the collection
+  #   title: "404 On The Floor - Blog Posts"
+  #   description: "My thoughts, ideas, and experiences in cybersecurity."
+  #   sort_by: "date"
+  #   reverse: true
+  #   defaults:
+  #     -
+  #       scope:
+  #         path: "/blog"
+  #       values:
+  #         layout: "post"
+  projects:
+    output: true # create a "projects" page
+    permalink: /:collection/:name/ # path is /projects/:project-title/ for each page in the collection
+    title: "404 On The Floor - Projects"
+    description: "A list of my projects, in progress and completed."
+    sort_by: "date"
+    reverse: true
+    completed: true # create a custom field to indicate if the project is completed
+    defaults:
+      -
+        scope:
+          path: ""
+        values:
+          layout: "post"
