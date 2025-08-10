@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /categories/
+title: "Categories - 404 On The Floor"
+description: "Browse all my posts by category."
+---
+<h1>Posts By Category</h1>
+<p>{{ page.description }}</p>
+<br>
+{% for category in site.categories %}
+  {% assign name = category[0] %}
+  <h2>{{ name | capitalize | replace: "-", " " }}</h2>
+  {% for post in category[1] %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <p>{{ post.description }}</p>
+  {% endfor %}
+{% endfor %}

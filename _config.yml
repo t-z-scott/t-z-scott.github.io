@@ -1,8 +1,9 @@
 title: 404 On The Floor
-description: My personal website showcasing my projects, resume, and blog posts.
+description: My personal website where I blog, take notes, and do writeups.
 author:
   name: Purple Paradox
   email: hello@404onthefloor.com
+
 # Uncomment the following lines to use a local theme
 # theme: jekyll-theme-hacker
 # plugins:
@@ -11,12 +12,14 @@ author:
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
+
 defaults: # front matter defaults
   -
     scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
 favicons:
   - icon: "assets/images/favicon/favicon-96x96.png"
     sizes: "96x96"
@@ -31,31 +34,39 @@ favicons:
     rel: "manifest"
 include:
   - assets
+
 collections:
-  # blog:
-  #   output: true # create a "blog" page
-  #   permalink: /:collection/:title/ # path is /blog/:post-title/ for each post in the collection
-  #   title: "404 On The Floor - Blog Posts"
-  #   description: "My thoughts, ideas, and experiences in cybersecurity."
-  #   sort_by: "date"
-  #   reverse: true
-  #   defaults:
-  #     -
-  #       scope:
-  #         path: "/blog"
-  #       values:
-  #         layout: "post"
+  blog:
+    output: true # create a "blog" page
+    permalink: /:collection/:title/ # path is /blog/:post-title/ for each post in the collection
+    sort_by: "date"
+    reverse: true
+    defaults:
+      -
+        scope:
+          path: "/blog"
+        values:
+          layout: "post"
   projects:
-    output: true # create a "projects" page
+    output: true
     permalink: /:collection/:name/ # path is /projects/:project-title/ for each page in the collection
-    title: "404 On The Floor - Projects"
-    description: "A list of my projects, in progress and completed."
     sort_by: "date"
     reverse: true
     completed: true # create a custom field to indicate if the project is completed
     defaults:
       -
         scope:
-          path: ""
+          path: "/projects"
+        values:
+          layout: "post"
+  logs:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: "date"
+    reverse: true
+    defaults:
+      -
+        scope:
+          path: "/captains-log"
         values:
           layout: "post"

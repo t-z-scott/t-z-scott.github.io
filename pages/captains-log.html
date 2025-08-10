@@ -1,22 +1,22 @@
 ---
 layout: default
-title: 404 On the Floor - Blog
-description: My thoughts, ideas, and experiences in cybersecurity.
-permalink: /blog/
+title: "404 On The Floor - Captain's Log"
+description: "My adventures in building this site."
+permalink: /captains-log
 ---
-<h1>Blog Posts</h1>
+<h1>Captain's Log</h1>
 <p>{{ page.description }}</p>
-<p>Check out the <a href="/feed.blog.xml">RSS feed</a> for updates on my latest posts.</p>
+<p>Check out the <a href="/feed.captains-log.xml">RSS feed</a> for updates on this site's latest features.</p>
 <br>
-<div id="blog-posts">
+<div id="caps-logs">
   {% capture written_year %}'None'{% endcapture %}
-  {% for post in site.categories['blog'] %}
+  {% for post in site.categories['captains-log'] %}
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% if year != written_year %}
       <h2 id="{{ year | slugify }}" class="blog_sections">{{ year }}</h2>
       {% capture written_year %}{{ year }}{% endcapture %}
     {% endif %}
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <p>{{ post.excerpt }}</p>
+    <p>{{ post.description }}</p>
   {% endfor %}
 </div>
