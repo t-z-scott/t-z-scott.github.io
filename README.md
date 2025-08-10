@@ -7,6 +7,7 @@ permalink: /
 <a class="h-card" href="https://404onthefloor.com">
   <img src="/assets/images/favicon/favicon.ico" alt="Purple Paradox's icon" />
 </a>
+
 # 👋 Hi y'all!
 I'm Purple Paradox, and this is my website. Take a look at the pages in the navigation bar above, especially the [blog](/blog/)! Learn more about me [here](/about/). You can follow my work in the RSS feeds for my [blog](/feed.blog.xml), [projects](/feed.projects.xml), and [the Captain's Log](/feed.captains-log.xml).
 
