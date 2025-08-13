@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/navbar.css' | relative_url }}">
     {% include header.html %}
-
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
@@ -30,7 +29,7 @@
       </div>
     </header>
 
-    {% include navbar.html %}
+    {% include navigation.html %}
     <div class="container">
       <section id="main_content">
         {{ content }}

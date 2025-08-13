@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /categories/
-title: "Categories - 404 On The Floor"
+title: "Posts - 404 On The Floor"
 description: "Browse all my posts by category."
 ---
 <h1>Posts By Category</h1>
@@ -9,7 +9,12 @@ description: "Browse all my posts by category."
 <br>
 {% for category in site.categories %}
   {% assign name = category[0] %}
-  <h2>{{ name | capitalize | replace: "-", " " }}</h2>
+  {% if name == "captains-log" %}
+    <h2>Captain's Log</h2>
+  {% else %}
+    <h2>{{ name | capitalize | replace: "-", " " }}</h2>
+  {% endif %}
+  <p>See all posts <a href="/{{ name | slugify }}">here</a>.</p>
   {% for post in category[1] %}
     <a href="{{ post.url }}">{{ post.title }}</a>
     <p>{{ post.description }}</p>

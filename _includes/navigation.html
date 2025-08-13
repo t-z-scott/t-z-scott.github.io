@@ -1,0 +1,45 @@
+<!-- <nav>
+  <ul>
+    {% for nav in site.data.nav %}
+      {% if navigation.subcategories != null %}
+        <li>
+          <a href="{{ site.url }}{{ navigation.url }}">{{ navigation.title }} ▼</a>
+          <ul>
+          {% for subcategory in navigation.subcategories %}
+            <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+          {% endfor %}
+          </ul>
+        </li>
+      {% elsif navigation.title == page.title %}
+         <li class="active">
+           <a href="{{ navigation.url }}">{{ navigation.title }}</a>
+         </li>
+      {% else %} 
+        <li>
+          <a href="{{ site.url }}{{ navigation.href }}">{{ navigation.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav> -->
+
+<!-- originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY -->
+<!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="showDropdown()">Posts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="posts-dropdown" class="posts-content">
+      <a href="/blog"><i class="fa fa-pencil"></i> Blog</a>
+      <a href="/projects"><i class="fa fa-folder"></i> Projects</a>
+      <a href="/captains-log"><i class="fa fa-anchor"></i> Captain's Log</a>
+    </div>
+  </div>
+  <a href="/tags"><i class="fa fa-tags"></i> Tags</a>
+  <a href="/resume"><i class="fa fa-briefcase"></i> Resume</a>
+  <a href="/about"><i class="fa fa-info-circle"></i> About</a>
+  <a href="/"><i class="fa fa-home"></i> Home</a>
+</div>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
