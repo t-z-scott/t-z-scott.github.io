@@ -1,0 +1,3 @@
+Entity: 404OnTheFloor,US
+Privacy-policy: https://404onthefloor.com/privacy
+Contact: mailto:hello@404onthefloor.com

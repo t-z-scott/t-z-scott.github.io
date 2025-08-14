@@ -1,0 +1,26 @@
+/* humans.org */
+
+/* TEAM */
+    Creator: Taylor Scott
+    Site: 404onthefloor.com
+    From: San Francisco South Bay, US
+    Powered by: ramen, fight scenes, and pettiness
+
+/* THANKS */
+    Inspiration: https://shellsharks.com (Site
+        structure)
+    Inspiration: https://arturoherrero.com/ (code
+        snippets)
+
+/* SITE */
+    Founded: July 2025
+    IDE: VS Code
+    Hosting: GitHub Pages & Jekyll
+    Logo: Picture free for commerical and personal
+        use
+    Icons: FontAwesome
+        (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
+    
+/* Approach */
+Indieweb, no ads, highly linked, work-in-progress,
+stitched together, secure by default, offbeat.

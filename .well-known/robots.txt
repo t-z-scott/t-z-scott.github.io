@@ -1,3 +1,16 @@
+# My policy
+# 
+# Allowed:
+# - Search engine indexers
+# - Archival services (such as Internet Archive)
+# 
+# Disallowed:
+# - Everything else, by default
+# 
+# If you do not respect robots.txt or you delibrately
+# circumvent it, I will learn how to block subnets just
+# to block you and publish a shame list.
+# 
 # www.robotstxt.org/
 # resource: https://github.com/fail2ban/fail2ban/discussions/3772
 # robots.txt verification: https://technicalseo.com/tools/robots-txt/
