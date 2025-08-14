@@ -14,15 +14,15 @@
 }
 
 /* div class to position the dropdown */
-.dropdown {
+.dropdown, .dropdown-two {
   float: right;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn, .dropdown-two .dropbtn-two {
   color: white;
-  padding: 16.7px 16px;
-  font-size: 16px;
+  padding: 17.85px;
+  font-size: inherit;
   border: none;
   outline: none;
   cursor: pointer; /* changes cursor into a hand on hover */
@@ -33,12 +33,12 @@
 
 /* add a green background color to navbar links on hover */
 /* TODO: change to same green as the hacker theme */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover, .dropbtn, .dropdown-two:hover, .dropbtn-two {
   background-color: #23b937;
 }
 
 /* dropdown content */
-.posts-content {
+.posts-content, .other-content {
   display: none; /* hide by default */
   position: absolute;
   background-color: #f9f9f9;
@@ -49,7 +49,7 @@
 }
 
 /* links inside the dropdown */
-.posts-content a {
+.posts-content a, .other-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -59,7 +59,7 @@
 }
 
 /* add a grey background color to dropdown links on hover */
-.posts-content a:hover {background-color: #ddd;}
+.posts-content a:hover, .other-content a:hover {background-color: #ddd;}
 
 /* show the dropdown menu w/ js */
 .show {display:block;}

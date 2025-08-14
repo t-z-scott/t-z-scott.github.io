@@ -27,14 +27,28 @@
 <!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="navbar">
+  <div class="dropdown-two">
+    <button class="dropbtn-two" onclick="showOtherDropdown()">
+      <i class="fa fa-bars"></i> Other
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="other-dropdown" class="other-content">
+      <a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a>
+      <a href="/infosec-tools"><i class="fa fa-shield"></i> InfoSec Tools</a>
+      <a href="/privacy"><i class="fa fa-user"></i> Privacy</a>
+    </div>
+  </div>
   <div class="dropdown">
-    <button class="dropbtn" onclick="showDropdown()">Posts
+    <button class="dropbtn" onclick="showDropdown()">
+      <i class="fa fa-book"></i> Posts
       <i class="fa fa-caret-down"></i>
     </button>
     <div id="posts-dropdown" class="posts-content">
-      <a href="/blog"><i class="fa fa-pencil"></i> Blog</a>
+      <a href="/blog"><i class="fa fa-newspaper-o"></i> Blog</a>
       <a href="/projects"><i class="fa fa-folder"></i> Projects</a>
       <a href="/captains-log"><i class="fa fa-anchor"></i> Captain's Log</a>
+      <a href="/notes"><i class="fa fa-pencil"></i> Notes</a>
+      <a href="/writeups"><i class="fa fa-file-text"></i> Writeups</a>
     </div>
   </div>
   <a href="/tags"><i class="fa fa-tags"></i> Tags</a>

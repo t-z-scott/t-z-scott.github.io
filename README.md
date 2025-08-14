@@ -21,7 +21,7 @@ Currently I'm [building several features](/captains-log/) for this site. Next:
 ## Special thanks to...
 **Arturo Herrero** - check out their [cool website](https://arturoherrero.com/). I based my header, footer, and index off their [code](https://github.com/arturoherrero/arturoherrero.com/blob/master/pages/index.md?plain=1).
 
-**Johnathan McGlone** for [this guide on creating a GitHub Pages site](https://jmcglone.com/guides/github-pages/), which I found very helpful.
+**Johnathan McGlone** for [this guide on creating a GitHub Pages site](https://jmcglone.com/guides/github-pages/), which I found very helpful while troubleshooting.
 
 **Michael Sass**, creator and owner of [Shellsharks](https://shellsharks.com/) and this [online resume](https://shellsharks.com/resume), for inspiring me to join the Indie Web. Speaking of...
 ## This website has joined the Indie Web!

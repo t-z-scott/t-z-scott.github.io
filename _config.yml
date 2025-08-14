@@ -1,8 +1,13 @@
 title: 404 On The Floor
-description: My personal website where I blog, take notes, and do writeups.
+description: My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.
+feed_items: 10
+feed_update_period: monthly
+feed_update_frequency: 1
 author:
   name: Purple Paradox
   email: hello@404onthefloor.com
+  github: https://github.com/t-z-scott
+  linkedin: https://www.linkedin.com/in/t-z-scott/
 
 # Uncomment the following lines to use a local theme
 # theme: jekyll-theme-hacker
@@ -34,6 +39,13 @@ favicons:
     rel: "manifest"
 include:
   - assets
+  # - _data
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+  load_paths:
+    - assets/css
 
 collections:
   blog:
@@ -68,5 +80,27 @@ collections:
       -
         scope:
           path: "/captains-log"
+        values:
+          layout: "post"
+  notes:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: "date"
+    reverse: true
+    defaults:
+      -
+        scope:
+          path: "/notes"
+        values:
+          layout: "post"
+  writeups:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: "date"
+    reverse: true
+    defaults:
+      -
+        scope:
+          path: "/writeups"
         values:
           layout: "post"
