@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Security+ Study Guide
-description: What I used to gain my Sec+.
-excerpt: Hey y'all! In the spirit of PESOS, I'm posting an edited (read: improved) version of my LinkedIn post with all the links they wouldn't let me include. Enjoy!
+description: "What I used to gain my Sec+."
+excerpt: "Hey y'all! In the spirit of PESOS, I'm posting an edited (read: improved) version of my LinkedIn post with all the links they wouldn't let me include. Enjoy!"
 category: blog
 tags: [resources, infosec, certs, sec+]
 ---
