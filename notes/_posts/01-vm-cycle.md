@@ -1,0 +1,111 @@
+---
+layout: post
+title: Vulnerability Management Lifecycle
+description: The vulnerability management lifecycle, explained.
+category: notes
+published: 2025-10-23
+updated:
+tags:
+  - infosec
+  - vm
+  - blog
+---
+# Introduction
+
+Welcome to my first posted note! The way I take notes is writing down the gist, then looking up any terms or concepts I didn't understand, so my notes have footnotes where I cite my sources, give more information, and define terms. I hope to make everything on this blog understandable to someone outside of cybersecurity. If there's something that's confusing or poorly worded, let me know. Alright, let's get started.
+
+---
+
+The vulnerability management lifecycle[^1] is similar to the [Incident Management Process](/notes/02-im-process). This will be split into two parts: how I believe it should be done for individual projects, and the lifecycle that organizations use.
+
+# Individual Vulnerability Management Lifecycle
+
+This is what I use to maintain this site.
+
+## 1. Understand the vulnerability.
+
+Clearly define what the vulnerability[^2] is and write a summary. Find the root cause[^3], then apply relevant mitigation strategies for the vulnerability. Here's a list of general examples:
+
+- Patch and update all software regularly.
+- Implement input validation and other secure coding practices while developing your product.
+- Harden your configuration and disable unnecessary services.
+- Limit user permissions to what is necessary (access control).
+- MFA offers protection against credential-based attacks. It's useful if the username or password has already been compromised.
+- Implement encryption for sensitive data in transit and at rest.
+
+## 2. Apply temporary mitigations, if needed.
+
+While a patch is in development, provide a temporary mitigation to stop exploitation from bad actors. Examples of this include:
+
+- Deprecating the version to the stable release,
+- Blocking access to the vulnerable service in your firewall, or
+- Disabling vulnerable features.
+
+Communication with your users is key. Make sure they know that this is a temporary measure and provide them with a timeline for the permanent mitigation.
+
+## 3. Prioritize by risk.
+
+Use risk assessments[^4] to prioritize the mitigations. Vulnerabilities affecting critical systems or ones with high exploitability should be addressed first.
+
+## 4. Remediate.
+
+Patch the vulnerability. Remember to remove the temporary mitigation as it's no longer needed.
+
+## 5. Monitor.
+
+Continuously monitor your code, repository, and service for any anomalous behavior.
+
+---
+
+# Organizational Vulnerability Management Lifecycle
+
+The organizational version of this closely follows the [Individual VM Cycle](#individual-vulnerability-management-lifecycle) I proposed.
+
+1. Assess
+2. Prioritize
+3. Act
+4. Reassess
+5. Improve[^5]
+
+The changes include not instituting temporary mitigations, and which mitigation strategies to employ for a vulnerability, as seen below.
+
+## Common Organizational Mitigation Strategies
+
+- Keep an updated list of all assets.
+- Patch and update all third-party software in use regularly.
+- Have a defined system in place for decommissioning services, third-party or otherwise.
+- Implement input validation and other secure coding practices while developing your product(s). If there is an automated service scanning your code, make sure it's audited regularly.
+- Harden the configuration on all in-network devices and continuously audit and disable unnecessary services.
+- Limit user and access permissions to what is necessary for job duties (principle of least privilege and access control).
+- MFA offers protection against credential-based attacks, but an organization would be more secure with some form of **SSO**[^6] if feasible.
+- Implement encryption for sensitive data in transit and at rest.
+- Monitor the codebase, repository, and services for anomalous behavior. It's preferred to use an automated service for this, such as a **SIEM**[^7] tool.
+- Educate users about phishing and social engineering to reduce human risk.
+- Limit the lateral movement of potential attackers in your environment with **network segmentation**[^8]. This ensures that if a breach occurs in one segment, the others remain unaffected.
+
+---
+
+# Footnotes
+
+[^1]: **Vulnerability management** is the structured process of identifying, mitigating, and monitoring vulnerabilities in a system, network, and/or application(s). The **vulnerability management lifecycle** is the steps in this process.
+	Source: my notes on [TryHackMe Advent of Cyber 2023.](https://tryhackme.com/room/adventofcyber2023 "TryHackMe Advent of Cyber 2023").
+
+[^2]: A **vulnerability** is a flaw, loophole, oversight, or error that can be exploited to violate a system's security.
+	Source: my notes on the [IBM Cybersecurity Analyst - Introduction to Cybersecurity Tools & Cyberattacks](https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks).
+
+[^3]: The **root cause** of a vulnerability is the fundamental reason behind its occurrence. For example, missing patches could be what causes malware to appear on a system, but this is caused by a failure of third-party patch management procedures.
+	Source: my notes on the [IBM Cybersecurity Analyst - Introduction to Cybersecurity Tools & Cyberattacks](https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks).
+
+[^4]: A **risk assessment** is the process of identifying, prioritizing, managing and monitoring risks to information systems.
+	Source: [IBM](https://www.ibm.com/think/topics/cyber-risk-management).
+
+[^5]: Source: [IBM](https://www.ibm.com/think/topics/vulnerability-management-lifecycle).
+
+[^6]: **Single-sign on** is an authentication scheme that allows a user to log in with a single ID to any one of several software systems.
+	Source: a class I don't have notes for, work, and [Wikipedia](https://en.wikipedia.org/wiki/Single_sign-on).
+
+[^7]: A **security information and event management** system gathers all logs from all machines on the network, analyze those logs automatically, and point out *anomalies*.
+	Source: my notes on the [IBM Cybersecurity Analyst - Introduction to Cybersecurity Tools & Cyberattacks](https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks).
+
+[^8]: **Network segmentation** is the division of one network into smaller networks that act independently to improve network performance and security. AKA network segregation, network partitioning, and network isolation.
+	Source: work and [Cisco](https://www.cisco.com/site/us/en/learn/topics/security/what-is-network-segmentation.html).
