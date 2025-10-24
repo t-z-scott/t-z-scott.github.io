@@ -12,7 +12,7 @@ tags:
 ---
 Here's the [class](https://www.coursera.org/learn/introduction-cybersecurity-cyber-attacks) for this note, the [source](https://www.crest-approved.org/approved-services/cyber-security-incident-response-maturity-assessment/), and the [IBM Data Breach Calculator](https://databreachcalculator.mybluemix.net/) for fun. This note is in lowercase, as it's taken directly from my actual `school-notes` vault in Obsidian!
 
-Similar to the [Vulnerability Management Lifecycle](/notes/2025-10-23-vm-cycle), this process has three general phases: prepare, respond, follow-up.
+Similar to the [Vulnerability Management Lifecycle](/notes/2025/10/23/vm-cycle.html), this process has three general phases: prepare, respond, follow-up.
 
 # phase 1: preparation
 
