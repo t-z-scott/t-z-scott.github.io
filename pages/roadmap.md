@@ -19,7 +19,7 @@ permalink: /roadmap
 - [x] [Privacy](/privacy) page
 - [x] [Resume](/resume)
 - [x] [humans.txt](.well-known/humans.txt)
-- [ ] [security.txt](/.well-known/security.txt)
+- [x] [security.txt](/.well-known/security.txt)
 - [x] RSS Feeds for post categories
 - [x] [robots.txt](.well-known/robots.txt)
 - [x] Navigation dropdown box! 

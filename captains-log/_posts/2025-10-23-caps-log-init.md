@@ -3,7 +3,7 @@ layout: post
 title: "Captain's Log 1: Initialization"
 description: How I built my site, plus some tips.
 published: 2025-10-23
-updated:
+updated: 2025-10-24
 category: captains-log
 tags:
   - tech
@@ -36,7 +36,7 @@ I launched the site on the README on Pages, then started adding the configuratio
 # 2. Domain Hosting
 By default, GitHub Pages websites domains are `<USERNAME>.github.io`. Pretty unmemorable and utilitarian. Time to spice things up! My [first post](/blog/2025/07/23/blog-name.html) explains why I chose the name 404 On The Floor, but what I don't mention is it being *memorable*. If anyone ever asks you about your blog, you can tell them the name and they can type it in their browser.
 
-I picked [Porkbun](www.porkbun.com) for the included security features, custom email hosting, and ease of use. No problems with it so far 🤞🏾 Other sites I've seen people use are [Namecheap](www.namecheap), [Hostinger](www.hostinger.com), and [GoDaddy](www.godaddy.com). I used [this GitHub help page]() [this Porkbun help page]() to set this up. Now my 404 On The Floor domain redirects to this `<USERNAME>.github.io` site.
+I picked [Porkbun](www.porkbun.com) for the included security features, custom email hosting, and ease of use. No problems with it so far 🤞🏾 Other sites I've seen people use are [Namecheap](www.namecheap), [Hostinger](www.hostinger.com), and [GoDaddy](www.godaddy.com). I used [this GitHub help page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) and [this Porkbun help page](https://kb.porkbun.com/article/64-how-to-connect-your-domain-to-github-pages) to set this up. Now my 404 On The Floor domain redirects to this `<USERNAME>.github.io` site.
 
 # 3. Features
 Now it's time for the fun part: doing whatever I wanted! I knew before I started building this site that I wanted a navigation bar at the top, so that's where I started.

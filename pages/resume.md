@@ -4,7 +4,7 @@ permalink: /resume
 published: 2025-08-13
 updated: 2025-10-23
 ---
-<small><i>Last updated: {{ page.updated }}</i></small>
+<small><i>Last updated: {{ page.updated | date: "%b %-d, %Y" }}</i></small>
 
 Creative and driven information security professional with varied technical experience, specializing in risk assessments, threat modeling, AI security, automation, defensive security engineering, and technical writing.
 

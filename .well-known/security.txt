@@ -1,0 +1,9 @@
+Contact: mailto:hello@404onthefloor.com
+
+Expires: 2028-10-24T16:00:00.000Z
+
+Encryption: https://www.404onthefloor.com/.well-known/pgp-publickey.txt
+
+Preferred-Languages: en
+
+Last-Updated: 10-24-2025
