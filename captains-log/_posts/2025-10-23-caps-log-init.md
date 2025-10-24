@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Captain's Log 1: Initialization"
 description: How I built my site, plus some tips.
 published: 2025-10-23
