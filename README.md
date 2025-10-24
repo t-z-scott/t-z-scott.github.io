@@ -15,8 +15,9 @@ Note: webpage is under construction. Some links may not work. I have made a cust
 ## What's next?
 Currently I'm [building several features](/captains-log/) for this site. Next:
 1. I'll finish the incomplete infosec projects I have.
-2. I'll build my own active directory and document the process in my [projects](/projects) page.
+2. I'll finish the open items on [my roadmap](/roadmap)
 3. I'll start with either this [list of future project ideas](https://cybercademy.org/project-ideas/) or [this one](https://www.codecademy.com/projects/subject/cybersecurity).
+4. I'll build my own active directory and document the process in my [projects](/projects) page.
 
 ## Special thanks to...
 **Arturo Herrero** - check out their [cool website](https://arturoherrero.com/). I based my header, footer, and index off their [code](https://github.com/arturoherrero/arturoherrero.com/blob/master/pages/index.md?plain=1).

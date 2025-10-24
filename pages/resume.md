@@ -4,6 +4,8 @@ permalink: /resume
 published: 2025-08-13
 updated: 2025-10-23
 ---
+<small><i>Last updated: {{ page.updated }}</i></small>
+
 Creative and driven information security professional with varied technical experience, specializing in risk assessments, threat modeling, AI security, automation, defensive security engineering, and technical writing.
 
 *Career highlights include:*
@@ -15,6 +17,7 @@ Creative and driven information security professional with varied technical expe
 
 # Education
 > B.S. Computer Science, *Louisiana State University* (2024)
+
 # Certifications
 - [Security+](https://www.comptia.org/certifications/security) (2023)
 - [Google Professional Cybersecurity Certificate](https://www.coursera.org/professional-certificates/google-cybersecurity) (2023)

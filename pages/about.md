@@ -19,11 +19,11 @@ I'm a security engineer based in the San Francisco Bay Area. During my
 career, I have had the opportunity to work with amazing people securing
 supply chains, automating processes, and leading technical projects.
 
-I'm constantly working on [personal projects](/projects/). My journey
+I'm constantly working on [personal projects](/projects). My journey
 includes writing documentation, creating requirements for my
 professional projects, and occasionally mentoring. See my
-[resume](/resume/) for more details.
+[resume](/resume) for more details.
 
 You can find me on
 *[LinkedIn](https://www.linkedin.com/in/taylor-z-scott/),* or [email
-me](contact.taylorzs@gmail.com) for inquiries.
+me](mailto:contact.taylorzs@gmail.com) for inquiries.
