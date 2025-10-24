@@ -26,7 +26,12 @@
 <!-- originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY -->
 <!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="navbar">
+<div class="navbar" id="myNavbar">
+  <!-- Hamburger icon for mobile -->
+  <button class="hamburger" onclick="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </button>
+  
   <div class="dropdown-two">
     <button class="dropbtn-two" onclick="showOtherDropdown()">
       <i class="fa fa-bars"></i> Other

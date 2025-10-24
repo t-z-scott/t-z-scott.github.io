@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <head>
     <!-- grab title & desc from config using liquid -->
-    <title>Purp - whoami</title>
+    <title>$whoami</title>
     <meta name="description" content="">
     <!-- favicon files -->
     <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -18,35 +19,33 @@
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
 </head>
 
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Purp - whoami | 404 On The Floor</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>$whoami | 404 On The Floor</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Purp - whoami" />
+<meta property="og:title" content="$whoami" />
 <meta name="author" content="Purple Paradox" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My personal website showcasing my projects, resume, and blog posts." />
-<meta property="og:description" content="My personal website showcasing my projects, resume, and blog posts." />
+<meta name="description" content="My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy." />
+<meta property="og:description" content="My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy." />
 <link rel="canonical" href="http://localhost:4000/about/" />
 <meta property="og:url" content="http://localhost:4000/about/" />
 <meta property="og:site_name" content="404 On The Floor" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Purp - whoami" />
+<meta property="twitter:title" content="$whoami" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Purple Paradox"},"description":"My personal website showcasing my projects, resume, and blog posts.","headline":"Purp - whoami","name":"404 On The Floor","url":"http://localhost:4000/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Purple Paradox"},"description":"My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.","headline":"$whoami","name":"404 On The Floor","url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="/">
           <h1>404 On The Floor</h1>
         </a>
-        <h2>My personal website showcasing my projects, resume, and blog posts.</h2>
+        <h2>My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.</h2>
 
         <section id="downloads">
           
@@ -55,37 +54,68 @@
       </div>
     </header>
 
-    <body>
-  <div class="row">
-    <div class="centered columns">
-      <header style="text-align: right;">
-        <a href="/">Home</a>
-        <span> / </span>
-        <a href="/projects">Projects</a>
-        <span> / </span>
-        <a href="/blog">Blog</a>
-        <span> / </span>
-        <a href="/about">About</a>
-        <span> / </span>
-        <a href="/resume">Resume</a>
-        <span> / </span>
-        <a href="/tags">Tags</a>
-      </header>
+    <!-- <nav>
+  <ul>
+    
+  </ul>
+</nav> -->
+
+<!-- originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY -->
+<!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="navbar" id="myNavbar">
+  <!-- Hamburger icon for mobile -->
+  <button class="hamburger" onclick="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </button>
+  
+  <div class="dropdown-two">
+    <button class="dropbtn-two" onclick="showOtherDropdown()">
+      <i class="fa fa-bars"></i> Other
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="other-dropdown" class="other-content">
+      <a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a>
+      <a href="/infosec-tools"><i class="fa fa-shield"></i> InfoSec Tools</a>
+      <a href="/privacy"><i class="fa fa-user"></i> Privacy</a>
     </div>
   </div>
-</body>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="showDropdown()">
+      <i class="fa fa-book"></i> Posts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="posts-dropdown" class="posts-content">
+      <a href="/blog"><i class="fa fa-newspaper-o"></i> Blog</a>
+      <a href="/projects"><i class="fa fa-folder"></i> Projects</a>
+      <a href="/captains-log"><i class="fa fa-anchor"></i> Captain's Log</a>
+      <a href="/notes"><i class="fa fa-pencil"></i> Notes</a>
+      <a href="/writeups"><i class="fa fa-file-text"></i> Writeups</a>
+    </div>
+  </div>
+  <a href="/tags"><i class="fa fa-tags"></i> Tags</a>
+  <a href="/resume"><i class="fa fa-briefcase"></i> Resume</a>
+  <a href="/about"><i class="fa fa-info-circle"></i> About</a>
+  <a href="/"><i class="fa fa-home"></i> Home</a>
+</div>
+<script src="/assets/js/main.js"></script>
     <div class="container">
       <section id="main_content">
-        <p>Hi again! I’m Purple Paradox.</p>
+        <h1 id="about-the-site">About the Site</h1>
+<p>404 On The Floor is my personal blog and website—a space where I collect
+thoughts, projects, and my personal interests in the realm of
+cybersecurity. I’m the only contributor. This is an
+<a href="indieweb.org">IndieWeb</a> site. I publish <a href="/blog/">blog posts and notes</a>
+documenting ideas and learnings. I write about these topics outside my
+day job for no purpose other than informing myself and having fun.
+Learn more about how I handle your data in my <a href="/privacy">privacy policy</a>.</p>
+
+<h1 id="about-me">About Me</h1>
+<p>Hi, I’m Purple Paradox.</p>
 
 <p>I’m a security engineer based in the San Francisco Bay Area. During my
 career, I have had the opportunity to work with amazing people securing
 supply chains, automating processes, and leading technical projects.</p>
-
-<p>This is my personal website—a space where I collect thoughts, projects,
-and my personal interests in the realm of cybersecurity. I publish
-<a href="/blog/">blog posts and notes</a> documenting ideas and learnings along the
-way.</p>
 
 <p>I’m constantly working on <a href="/projects/">personal projects</a>. My journey
 includes writing documentation, creating requirements for my
@@ -93,15 +123,18 @@ professional projects, and occasionally mentoring. See my
 <a href="/resume/">resume</a> for more details.</p>
 
 <p>You can find me on
-<em><a href="https://www.linkedin.com/in/taylor-z-scott/">LinkedIn</a>,</em> or email
-me at <em><a href="mailto:contact.taylorzs@gmail.com">contact.taylorzs@gmail.com</a></em> for inquiries.</p>
+<em><a href="https://www.linkedin.com/in/taylor-z-scott/">LinkedIn</a>,</em> or <a href="contact.taylorzs@gmail.com">email
+me</a> for inquiries.</p>
 
       </section>
     </div>
-    <footer style="text-align: right;">
-	<a href="mailto:hello@404onthefloor.com">email</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer style="text-align: right;">
+	<a href=""><i class="fa fa-envelope"></i> email</a>
 	<span> / </span>
-	<a href="https://github.com/t-z-scott">github</a>
+	<a href=""><i class="fa fa-github"></i> github</a>
+	<span> / </span>
+	<a href=""><i class="fa fa-linkedin"></i> linkedin</a>
 </footer>
   </body>
 </html>

@@ -25,27 +25,26 @@
   font-size: inherit;
   border: none;
   outline: none;
-  cursor: pointer; /* changes cursor into a hand on hover */
+  cursor: pointer;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
 }
 
 /* add a green background color to navbar links on hover */
-/* TODO: change to same green as the hacker theme */
 .navbar a:hover, .dropdown:hover, .dropbtn, .dropdown-two:hover, .dropbtn-two {
   background-color: #23b937;
 }
 
 /* dropdown content */
 .posts-content, .other-content {
-  display: none; /* hide by default */
+  display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 180px; /* Increased width to accommodate Captain's Log */
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  right: 0; /* Align dropdown with right edge of button */
+  right: 0;
 }
 
 /* links inside the dropdown */
@@ -59,7 +58,78 @@
 }
 
 /* add a grey background color to dropdown links on hover */
-.posts-content a:hover, .other-content a:hover {background-color: #ddd;}
+.posts-content a:hover, .other-content a:hover {
+  background-color: #ddd;
+}
 
 /* show the dropdown menu w/ js */
-.show {display:block;}
+.show {
+  display: block;
+}
+
+/* Hamburger menu icon - hidden by default on desktop */
+.hamburger {
+  display: none;
+  float: right;
+  font-size: 24px;
+  color: white;
+  padding: 14px 16px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.hamburger:hover {
+  background-color: #23b937;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Show hamburger menu on mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide all nav items by default on mobile */
+  .navbar a,
+  .navbar .dropdown,
+  .navbar .dropdown-two {
+    display: none;
+    float: none;
+    width: 100%;
+  }
+
+  /* When nav is active, show all items stacked vertically */
+  .navbar.responsive a,
+  .navbar.responsive .dropdown,
+  .navbar.responsive .dropdown-two {
+    display: block;
+    text-align: left;
+  }
+
+  /* Keep hamburger visible even when menu is open */
+  .navbar.responsive .hamburger {
+    display: block;
+  }
+
+  /* Adjust dropdown buttons for mobile */
+  .navbar.responsive .dropdown .dropbtn,
+  .navbar.responsive .dropdown-two .dropbtn-two {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Make dropdown content full width on mobile */
+  .navbar.responsive .posts-content,
+  .navbar.responsive .other-content {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* Style dropdown links for mobile */
+  .navbar.responsive .posts-content a,
+  .navbar.responsive .other-content a {
+    padding-left: 32px;
+  }
+}

@@ -1,5 +1,13 @@
 /* originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY */
 
+/* Toggle mobile menu */
+function toggleMobileMenu() {
+  var navbar = document.getElementById("myNavbar");
+  if (navbar) {
+    navbar.classList.toggle("responsive");
+  }
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function showDropdown() {
@@ -21,9 +29,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
-
-window.onclick = function(event) {
+  
   if (!event.target.matches('.dropbtn-two')) {
     var dropdowns = document.getElementsByClassName("other-content");
     var i;

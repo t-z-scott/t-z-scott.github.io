@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <head>
     <!-- grab title & desc from config using liquid -->
     <title>404 Error </3</title>
@@ -18,8 +19,7 @@
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
 </head>
 
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>404 Error &lt;/3 | 404 On The Floor</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="404 Error &lt;/3" />
@@ -40,13 +40,12 @@
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="/">
           <h1>404 On The Floor</h1>
         </a>
-        <h2>My personal website showcasing my projects, resume, and blog posts.</h2>
+        <h2>My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.</h2>
 
         <section id="downloads">
           
@@ -55,25 +54,51 @@
       </div>
     </header>
 
-    <body>
-  <div class="row">
-    <div class="centered columns">
-      <header style="text-align: right;">
-        <a href="/">Home</a>
-        <span> / </span>
-        <a href="/projects">Projects</a>
-        <span> / </span>
-        <a href="/blog">Blog</a>
-        <span> / </span>
-        <a href="/about">About</a>
-        <span> / </span>
-        <a href="/resume">Resume</a>
-        <span> / </span>
-        <a href="/tags">Tags</a>
-      </header>
+    <!-- <nav>
+  <ul>
+    
+  </ul>
+</nav> -->
+
+<!-- originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY -->
+<!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="navbar" id="myNavbar">
+  <!-- Hamburger icon for mobile -->
+  <button class="hamburger" onclick="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </button>
+  
+  <div class="dropdown-two">
+    <button class="dropbtn-two" onclick="showOtherDropdown()">
+      <i class="fa fa-bars"></i> Other
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="other-dropdown" class="other-content">
+      <a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a>
+      <a href="/infosec-tools"><i class="fa fa-shield"></i> InfoSec Tools</a>
+      <a href="/privacy"><i class="fa fa-user"></i> Privacy</a>
     </div>
   </div>
-</body>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="showDropdown()">
+      <i class="fa fa-book"></i> Posts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="posts-dropdown" class="posts-content">
+      <a href="/blog"><i class="fa fa-newspaper-o"></i> Blog</a>
+      <a href="/projects"><i class="fa fa-folder"></i> Projects</a>
+      <a href="/captains-log"><i class="fa fa-anchor"></i> Captain's Log</a>
+      <a href="/notes"><i class="fa fa-pencil"></i> Notes</a>
+      <a href="/writeups"><i class="fa fa-file-text"></i> Writeups</a>
+    </div>
+  </div>
+  <a href="/tags"><i class="fa fa-tags"></i> Tags</a>
+  <a href="/resume"><i class="fa fa-briefcase"></i> Resume</a>
+  <a href="/about"><i class="fa fa-info-circle"></i> About</a>
+  <a href="/"><i class="fa fa-home"></i> Home</a>
+</div>
+<script src="/assets/js/main.js"></script>
     <div class="container">
       <section id="main_content">
         <p>404: File not found! Either I’m still writing it or the site is down. Quick,
@@ -100,10 +125,13 @@ go back to the <a href="/">homepage</a> before it’s too late!</p>
 
       </section>
     </div>
-    <footer style="text-align: right;">
-	<a href="mailto:hello@404onthefloor.com">email</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer style="text-align: right;">
+	<a href=""><i class="fa fa-envelope"></i> email</a>
 	<span> / </span>
-	<a href="https://github.com/t-z-scott">github</a>
+	<a href=""><i class="fa fa-github"></i> github</a>
+	<span> / </span>
+	<a href=""><i class="fa fa-linkedin"></i> linkedin</a>
 </footer>
   </body>
 </html>

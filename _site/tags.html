@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <head>
     <!-- grab title & desc from config using liquid -->
-    <title>404 On The Floor - Tags</title>
+    <title>Tags</title>
     <meta name="description" content="">
     <!-- favicon files -->
     <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -18,35 +19,33 @@
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
 </head>
 
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>404 On The Floor - Tags | 404 On The Floor</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tags | 404 On The Floor</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="404 On The Floor - Tags" />
+<meta property="og:title" content="Tags" />
 <meta name="author" content="Purple Paradox" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My personal website showcasing my projects, resume, and blog posts." />
-<meta property="og:description" content="My personal website showcasing my projects, resume, and blog posts." />
+<meta name="description" content="My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy." />
+<meta property="og:description" content="My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy." />
 <link rel="canonical" href="http://localhost:4000/tags.html" />
 <meta property="og:url" content="http://localhost:4000/tags.html" />
 <meta property="og:site_name" content="404 On The Floor" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="404 On The Floor - Tags" />
+<meta property="twitter:title" content="Tags" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Purple Paradox"},"description":"My personal website showcasing my projects, resume, and blog posts.","headline":"404 On The Floor - Tags","url":"http://localhost:4000/tags.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Purple Paradox"},"description":"My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.","headline":"Tags","url":"http://localhost:4000/tags.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <a id="a-title" href="/">
           <h1>404 On The Floor</h1>
         </a>
-        <h2>My personal website showcasing my projects, resume, and blog posts.</h2>
+        <h2>My personal website where I blog, take notes, and do writeups on cybersecurity and digital privacy.</h2>
 
         <section id="downloads">
           
@@ -55,31 +54,101 @@
       </div>
     </header>
 
-    <body>
-  <div class="row">
-    <div class="centered columns">
-      <header style="text-align: right;">
-        <a href="/">Home</a>
-        <span> / </span>
-        <a href="/projects">Projects</a>
-        <span> / </span>
-        <a href="/blog">Blog</a>
-        <span> / </span>
-        <a href="/about">About</a>
-        <span> / </span>
-        <a href="/resume">Resume</a>
-        <span> / </span>
-        <a href="/tags">Tags</a>
-      </header>
+    <!-- <nav>
+  <ul>
+    
+  </ul>
+</nav> -->
+
+<!-- originally tested in my codepen: https://codepen.io/typestooloud/details/myeqmoY -->
+<!-- links are backwards so they'll align to the right... DO NOT CHANGE -->
+<div class="navbar" id="myNavbar">
+  <!-- Hamburger icon for mobile -->
+  <button class="hamburger" onclick="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </button>
+  
+  <div class="dropdown-two">
+    <button class="dropbtn-two" onclick="showOtherDropdown()">
+      <i class="fa fa-bars"></i> Other
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="other-dropdown" class="other-content">
+      <a href="/roadmap"><i class="fa fa-road"></i> Roadmap</a>
+      <a href="/infosec-tools"><i class="fa fa-shield"></i> InfoSec Tools</a>
+      <a href="/privacy"><i class="fa fa-user"></i> Privacy</a>
     </div>
   </div>
-</body>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="showDropdown()">
+      <i class="fa fa-book"></i> Posts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="posts-dropdown" class="posts-content">
+      <a href="/blog"><i class="fa fa-newspaper-o"></i> Blog</a>
+      <a href="/projects"><i class="fa fa-folder"></i> Projects</a>
+      <a href="/captains-log"><i class="fa fa-anchor"></i> Captain's Log</a>
+      <a href="/notes"><i class="fa fa-pencil"></i> Notes</a>
+      <a href="/writeups"><i class="fa fa-file-text"></i> Writeups</a>
+    </div>
+  </div>
+  <a href="/tags"><i class="fa fa-tags"></i> Tags</a>
+  <a href="/resume"><i class="fa fa-briefcase"></i> Resume</a>
+  <a href="/about"><i class="fa fa-info-circle"></i> About</a>
+  <a href="/"><i class="fa fa-home"></i> Home</a>
+</div>
+<script src="/assets/js/main.js"></script>
     <div class="container">
       <section id="main_content">
         <!-- source: https://emmatheeng.github.io/projects/blog_setup/blog-tags.html -->
-<div>Search through all of my posts by tag.</div> </br>
+<div>Browse through all of my posts by tag.</div> </br>
 
-<div id="tags-list">
+<div class="tag-list">
+  <h3 class="tag-list-heading line-bottom">All Tags</h3>
+  <ul>
+    
+      <a href="#music">#music</a>
+       / 
+    
+      <a href="#tech">#tech</a>
+       / 
+    
+      <a href="#resources">#resources</a>
+       / 
+    
+      <a href="#infosec">#infosec</a>
+       / 
+    
+      <a href="#certs">#certs</a>
+       / 
+    
+      <a href="#sec+">#sec+</a>
+       / 
+    
+      <a href="#captains-log">#captains log</a>
+       / 
+    
+      <a href="#blog">#blog</a>
+       / 
+    
+      <a href="#jekyll">#jekyll</a>
+       / 
+    
+      <a href="#github-pages">#github pages</a>
+       / 
+    
+      <a href="#im">#im</a>
+       / 
+    
+      <a href="#vm">#vm</a>
+       / 
+    
+      <a href="#writeups">#writeups</a>
+      
+    
+  </ul>
+</div>
+<!-- <div id="tags-list">
 
   
   
@@ -89,11 +158,7 @@
     <a name="music"></a>
     <ul class="post-list post-list-narrow">
      
-     <li><b>
-         <a href="/2025/07/23/blog-name.html">
-           What&#39;s with the name?
-         </a>
-       </b> - <i>Jul 23, 2025</i>
+     <li><b><a href="/blog/2025/07/23/blog-name.html">What&#39;s with the name?</a></b> - <i>Jul 23, 2025</i>
      </li>
      
     </ul>
@@ -107,23 +172,428 @@
     <a name="tech"></a>
     <ul class="post-list post-list-narrow">
      
-     <li><b>
-         <a href="/2025/07/23/blog-name.html">
-           What&#39;s with the name?
-         </a>
-       </b> - <i>Jul 23, 2025</i>
+     <li><b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/blog/2025/07/23/blog-name.html">What&#39;s with the name?</a></b> - <i>Jul 23, 2025</i>
      </li>
      
     </ul>
   </div>
 
+  
+  
+  <div class="tag-list">
+    <div id="#resources"></div>
+    <h3 class="post-list-heading line-bottom"> In #resources: </h3>
+    <a name="resources"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - <i>Aug 25, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#infosec"></div>
+    <h3 class="post-list-heading line-bottom"> In #infosec: </h3>
+    <a name="infosec"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - <i>Aug 25, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#certs"></div>
+    <h3 class="post-list-heading line-bottom"> In #certs: </h3>
+    <a name="certs"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - <i>Aug 25, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#sec+"></div>
+    <h3 class="post-list-heading line-bottom"> In #sec+: </h3>
+    <a name="sec+"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - <i>Aug 25, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#captains-log"></div>
+    <h3 class="post-list-heading line-bottom"> In #captains-log: </h3>
+    <a name="captains-log"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#blog"></div>
+    <h3 class="post-list-heading line-bottom"> In #blog: </h3>
+    <a name="blog"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+     <li><b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#jekyll"></div>
+    <h3 class="post-list-heading line-bottom"> In #jekyll: </h3>
+    <a name="jekyll"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#github-pages"></div>
+    <h3 class="post-list-heading line-bottom"> In #github-pages: </h3>
+    <a name="github-pages"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#im"></div>
+    <h3 class="post-list-heading line-bottom"> In #im: </h3>
+    <a name="im"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#vm"></div>
+    <h3 class="post-list-heading line-bottom"> In #vm: </h3>
+    <a name="vm"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+  
+  
+  <div class="tag-list">
+    <div id="#writeups"></div>
+    <h3 class="post-list-heading line-bottom"> In #writeups: </h3>
+    <a name="writeups"></a>
+    <ul class="post-list post-list-narrow">
+     
+     <li><b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - <i>Oct 23, 2025</i>
+     </li>
+     
+    </ul>
+  </div>
+
+</div> -->
+<div id="posts-by-tag">
+  
+    <h3>In #music:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/blog/2025/07/23/blog-name.html">What&#39;s with the name?</a></b> - 
+          <i>
+            <time datetime="Jul 23, 2025">23 July 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #tech:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/blog/2025/07/23/blog-name.html">What&#39;s with the name?</a></b> - 
+          <i>
+            <time datetime="Jul 23, 2025">23 July 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #resources:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - 
+          <i>
+            <time datetime="Aug 25, 2025">25 August 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #infosec:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - 
+          <i>
+            <time datetime="Aug 25, 2025">25 August 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #certs:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - 
+          <i>
+            <time datetime="Aug 25, 2025">25 August 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #sec+:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/blog/2025/08/25/sec-plus-recs.html">Security+ Study Guide</a></b> - 
+          <i>
+            <time datetime="Aug 25, 2025">25 August 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #captains-log:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #blog:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+        <li>
+          <b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #jekyll:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #github-pages:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/captains-log/2025/10/23/caps-log-init.html">Captain&#39;s Log 1: Initialization</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #im:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/im-process.html">Incident Management Process</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #vm:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/notes/2025/10/23/vm-cycle.html">Vulnerability Management Lifecycle</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      <p>---</p>
+    </ul>
+  
+    <h3>In #writeups:</h3>
+    <ul>
+      
+        <li>
+          <b><a href="/writeups/2025/10/23/thm-easy-peasy-ctf.html">TryHackMe - Easy Peasy CTF</a></b> - 
+          <i>
+            <time datetime="Oct 23, 2025">23 October 2025</time>
+          </i>
+        </li>
+      
+      
+    </ul>
+  
 </div>
       </section>
     </div>
-    <footer style="text-align: right;">
-	<a href="mailto:hello@404onthefloor.com">email</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer style="text-align: right;">
+	<a href=""><i class="fa fa-envelope"></i> email</a>
 	<span> / </span>
-	<a href="https://github.com/t-z-scott">github</a>
+	<a href=""><i class="fa fa-github"></i> github</a>
+	<span> / </span>
+	<a href=""><i class="fa fa-linkedin"></i> linkedin</a>
 </footer>
   </body>
 </html>
