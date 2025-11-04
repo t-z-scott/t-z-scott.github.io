@@ -3,14 +3,14 @@ layout: post
 title: "Captain's Log 1: Initialization"
 description: How I built my site, plus some tips.
 published: 2025-10-23
-updated: 2025-10-24
+updated: 2025-11-04
 category: captains-log
 tags:
   - tech
   - captains-log
-  - blog
   - jekyll
   - github-pages
+permalink: /captains-log/01-init
 ---
 Welcome to my Captain's Log, the more rambling informal posts where I discuss ~~how hard coding is~~ how I'm building this site! Hope you enjoy.
 # Website Hosting

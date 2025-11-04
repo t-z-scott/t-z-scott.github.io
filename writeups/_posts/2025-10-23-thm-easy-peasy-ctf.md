@@ -3,13 +3,13 @@ layout: post
 title: TryHackMe - Easy Peasy CTF
 description: My first CTF writeup on this site!
 published: 2025-10-23
-updated:
+updated: 2025-11-04
 category: writeups
 tags:
   - resources
   - writeups
   - infosec
-  - blog
+permalink: /writeups/thm-easy-peasy-ctf
 ---
 I don't know if it was just me, but this room was **not** easy. Here's the link: [Easy Peasy](https://tryhackme.com/room/easypeasyctf). I'll be using `$IP` to specify the machine IP address that was given by TryHackMe.
 
