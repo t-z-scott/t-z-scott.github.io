@@ -6,7 +6,7 @@ permalink: /tags.html
 <div>Browse through all of my posts by tag.</div> </br>
 
 <div class="tag-list">
-  <h3 class="tag-list-heading line-bottom">All Tags</h3>
+  <h1 class="tag-list-heading line-bottom">All Tags</h1>
   <ul>
     {% for tag in site.tags %}
       <a href="#{{ tag | first | slugize }}">#{{ tag | first | replace: "-", " " }}</a>
@@ -35,7 +35,7 @@ permalink: /tags.html
 </div> -->
 <div id="posts-by-tag">
   {% for tag in site.tags %}
-    <h3>In #{{ tag[0] }}:</h3>
+    <h2>#{{ tag[0] }}</h2>
     <ul>
       {% for post in tag[1] %}
         <li>
